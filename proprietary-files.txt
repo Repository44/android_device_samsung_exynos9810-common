@@ -148,6 +148,8 @@ vendor/lib/libmalicore.bc
 -vendor/lib64/egl/libGLES_mali.so
 -vendor/lib64/libLLVM_android_mali.so
 -vendor/lib64/libbcc_mali.so
+-vendor/lib64/hw/vulkan.mali.so|cb2998e41de503bb156791a0698510599cabc2da
+-vendor/lib/hw/vulkan.mali.so|0b3a2e1e760d8ab9d9b745a5a88ad5c6f272f00a
 vendor/lib64/libmalicore.bc
 
 # Ion
