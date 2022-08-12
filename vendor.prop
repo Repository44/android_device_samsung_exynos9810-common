@@ -18,6 +18,7 @@ ro.fastbootd.available=true
 # Set the display mode to automatic by default
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
+ro.hardware.vulkan=mali
 
 ### KEYSTORE
 ro.hardware.keystore=mdfpp
