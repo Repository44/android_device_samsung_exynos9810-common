@@ -24,6 +24,12 @@ ro.hardware.vulkan=mali
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 
+### Low RAM device
+ro.config.avoid_gfx_accel=true
+
+### VULKAN
+debug.hwui.renderer=skiavk
+
 ### KEYSTORE
 ro.hardware.keystore=mdfpp
 
