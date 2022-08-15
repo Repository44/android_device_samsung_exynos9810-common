@@ -28,6 +28,8 @@ renderthread.skia.reduceopstasksplitting=true
 ro.config.avoid_gfx_accel=true
 
 ### VULKAN
+ro.hwui.use_vulkan=true
+graphics.gpu.profiler.support=true
 debug.hwui.renderer=skiavk
 
 ### KEYSTORE
