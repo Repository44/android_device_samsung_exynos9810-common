@@ -119,7 +119,10 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@2.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -160,12 +163,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libepicoperator
-
-# Media
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
 # Memtrack
 PRODUCT_PACKAGES += \
@@ -287,6 +284,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
+
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 # Thermal
 PRODUCT_PACKAGES += \
